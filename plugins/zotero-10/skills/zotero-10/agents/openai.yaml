@@ -1,0 +1,6 @@
+interface:
+  display_name: "Zotero 10"
+  short_description: "Manage Zotero 10 notes, attachments and citations"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
+  default_prompt: "Use $zotero-10 to organize my Zotero library, update existing notes, attach PDFs, and manage citations."

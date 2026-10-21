@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-21",
+  "plugin": "zotero-10",
+  "pluginVersion": "1.0.1",
+  "isolatedTests": 30,
+  "liveWriteTested": false,
+  "note": "Transport-mocked tests; no live library writes performed by the release checks. Historical documentation audit: 2026-10-11. See references/official-documentation-audit.md inside the Skill."
+}

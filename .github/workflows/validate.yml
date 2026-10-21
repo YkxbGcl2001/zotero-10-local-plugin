@@ -1,0 +1,15 @@
+name: Verify packages
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B -m unittest discover -s plugins/zotero-10/tests -v
+      - run: python -B scripts/test_distribution.py
+      - run: python -B scripts/build.py
